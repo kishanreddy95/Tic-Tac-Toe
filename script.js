@@ -8,23 +8,18 @@ var controller = {
         ticTacToe.userChance = !ticTacToe.userChance;
     },
     userMove: function(id) {
+       var arr = ticTacToe.values;
        var item = document.getElementById(id);
        if(item.innerHTML == "") {
             if(ticTacToe.userChance == true) {
                 item.innerHTML = "X";
                 this.whichUser();
-                             
+                arr.splice(id, 1, "X");       
             } else {
-                item.innerHTML = "Y";
-                this.whichUser();
-                
+                item.innerHTML = "O";
+                this.whichUser();   
+                arr.splice(id, 1, "O"); 
             }    
         }    
-    },
-    userWinner: function() {
-        var arr = ticTacToe.values;
-        for(var i = 0; i < arr; i++) {
-
-        }
-    }
+    }  
 }
