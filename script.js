@@ -8,8 +8,8 @@ var View = {
       var arr = ticTacToe.values;
       var firstRow = arr[0] == "X" && arr[1] == "X" && arr[2] == "X";
       if(arr[0] == 'X' && arr[1] == 'X' && arr[2] == 'X' || 
-         arr[4] == 'X' && arr[5] == 'X' && arr[6] == 'X' || 
-         arr[7] == 'X' && arr[8] == 'X' && arr[9] == 'X' || 
+         arr[3] == 'X' && arr[4] == 'X' && arr[5] == 'X' || 
+         arr[6] == 'X' && arr[7] == 'X' && arr[8] == 'X' || 
          arr[0] == 'X' && arr[4] == 'X' && arr[8] == 'X' || 
          arr[2] == 'X' && arr[4] == 'X' && arr[6] == 'X' ||
          arr[0] == 'X' && arr[3] == 'X' && arr[6] == 'X' || 
@@ -18,8 +18,8 @@ var View = {
             var displayWinner = document.getElementById("winner");
             displayWinner.innerHTML = "User 1 wins";
       } else if(arr[0] == 'O' && arr[1] == 'O' && arr[2] == 'O' || 
-                arr[4] == 'O' && arr[5] == 'O' && arr[6] == 'O' || 
-                arr[7] == 'O' && arr[8] == 'O' && arr[9] == 'O' || 
+                arr[3] == 'O' && arr[4] == 'O' && arr[5] == 'O' || 
+                arr[6] == 'O' && arr[7] == 'O' && arr[8] == 'O' || 
                 arr[0] == 'O' && arr[4] == 'O' && arr[8] == 'O' || 
                 arr[2] == 'O' && arr[4] == 'O' && arr[6] == 'O' ||
                 arr[0] == 'O' && arr[3] == 'O' && arr[6] == 'O' || 
